@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer</title>
+</head>
+<body>
+    <form id = "my_form" name = "ksenia" method = "post|ger" action="form.php">
+        <fieldset>
+            <legend>текст заголовка</legend>
+            <label>
+                Check:<input type = "checkbox" name = "box">
+            </label>
+            <label for = "passwd">Пароль:</label>
+            <input type = "password" id = "passwd" name = "password" size = "25">
+            <hr>
+            <input type="password" id = "passwd" name = "password" size = "25">
+            <label for="passwd">- пароль</label>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <label for = "login">Имя: </label>
+            <input type = "text" id = "login" name = "login" autofocus>
+            <label for = "pass">Пароль: </label>
+            <input type = "password" id = "pass" name = "password">
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <label><input type = "checkbox" name = "val_1" id="chbox1" checked> 1 </label>
+            <label><input type = "checkbox" name = "val_2" id="chbox2"> 2 </label>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fielset>
+            <label><input type="checkbox" name="hobby[]"> check1</label><br>
+                <label><input type="checkbox" name="hobby[]"> check2</label><br>
+                <label><input type="checkbox" name="hobby[]"> check3</label><br>
+        </fielset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <label><input type = "radio" name="radio_group" value="value_01" id = "checkbox_group1_0" checked>1 </label>
+            <label><input type = "radio" name="radio_group" value="value_02" id = "checkbox_group2_0">2 </label>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <input type = "email" name = "email" placeholder = "это обязательное поле" required><br>
+            <input type= "text" name = "text" autocomplete = "off"><br>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <input type = "submit" value = "Отправить">
+            <input type = "reset" value = "Сбросить">
+            <input type = "image" src = "email.jpg">
+            <input type = "button" value = "Кнопка">
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <button type = 'submit'>
+                <b>Submit</b><br>
+                <img src = 'email.jpg'>
+            </button>
+        </fieldset>
+    </form>
+    <hr>
+    <form enctype="multipart/form-data">
+        <fieldset>
+            <input type = "file" name = "file_Field" dir = "ltr">
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <textarea name = "text_area" lang = "ru">текс по умолчанию</textarea>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <select name = "list" id = "list">
+                <option value = "1">Минск</option>
+                <option value = "2">Брест</option>
+                <option value = "0" selected>Город</option>
+            </select>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <select name = "list[]" size ="3" multiple id = "list">
+                <option value = "1">Минск</option>
+                <option value = "2" disable>Брест</option>
+                <option value = "0" selected>Город</option>
+            </select>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <select name="list" id="list"><br>
+                <optgroup label="Города РБ">
+                    <option value="1">Брест</option>
+                    <option value="2">Минск</option>
+                    <option value="3">Витебск</option>
+                </optgroup>
+                <optgroup label="Города России">
+                    <option value="4">Москва</option>
+                    <option value="5">Рязань</option>
+                    <option value="6">Магадан</option>
+                </optgroup>
+            </select>                
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <input type="email" placeholder="введите адрес почты"><br>
+            <input type="url" placeholder="введите адрес сайта"><br>
+            <input type="date" placeholder="выберите дату"><br>
+            <input type="time" placeholder="введите время"><br>
+            <input type="number" min="0" max="100" step="10"><br>
+            <input type="range" min="1" max="10"><br>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <label for ="index_1" >Индекс:</label>
+            <input type ="text" id="index_1" name="index_1" pattern="[0-9]{6,10}"> <small>(от 6 до 10) цифр</small><br>
+            <label for ="index_2" >Индекс:</label>
+            <input type ="text" id="index_2" name="index_2" pattern="^[A-Z].*"> <small>(Начинаться должно только с заглавной буквы)</small>
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <input type="text" placeholder = "Введите текст">
+            <input type = "file" name = "file_Field[]" id = "file_Field" multiple>
+            <input type = "email" name = "email[]" id = "email" multiple>
+        </fieldset>
+    </form>
+</body>
