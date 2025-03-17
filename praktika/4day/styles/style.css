@@ -1,0 +1,43 @@
+        .redtext {
+            color: #FF0000
+        }
+        .attention {
+            color: #FF0000;
+            font-style: italic;
+        }
+        #bigtext {
+            font-size: larger;
+        }
+        p em {
+            color: #0000FF
+        }
+        .menu {
+            background-color: rgb(255, 230, 1);
+            width: 75px;
+        }
+        .menu li {
+            list-style: armenian;
+        }
+        .menu a {
+            font-style: italic;
+        }
+        .menu_2{ 
+            background: lightgray; 
+            width: 75px;
+        }
+        .menu_2ItemDefault { 
+            color: black; 
+        }
+        .menu_2ItemCurrent { 
+            font-weight: bold; 
+        }
+        .menu_2ItemSelected { 
+            font-style: italic;
+        }
+        p.mini {
+            font-size: smaller;
+            color: #FF0000;
+        }
+        p.sel strong {
+            color: #FF0000;
+        }
