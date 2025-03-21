@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 1000px;
+}
+.header{
+    text-align: center;
+    height: 70px;
+    background: rgb(255, 137, 137);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu{
+    padding-top: 10px;
+    width: 200px;
+    height: 300px;
+    background: rgb(255, 255, 85);
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    padding: 20px;
+    background: rgb(129, 129, 255);
+}
+.banner{
+    padding-top: 10px;
+    width: 200px;
+    height: 300px;
+    float: right;
+    background: rgb(116, 255, 116);
+}
+.footer{
+    padding-top: 10px;
+    height: 100px;
+    background: gray;
+    clear: both;
+}
+.wrap{
+    background: rgb(197, 153, 199);
+    height: 300px;
+}
+.clear{
+    background: #000;
+    height: 10px;
+    clear: both;
+}
