@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            Таблицы
+            <br>
+            <a href="../index.html">Главная</a> |
+            <a href="./1.html">Задание 1</a> |
+            <a href="./2.html">Задание 2</a> |
+            <a href="./3.html">Задание 3</a> |
+            <a href="#">Задание 4</a> |
+            <a href="./5.html">Задание 5</a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="menu">menu</div>
+        <div class="banner">banner</div>
+        <div class="content context_wrap">
+            <table style="width: 500px;">
+                <caption style="font-size: 20px;">Заголовок таблицы</caption>
+                <tr align="center" valign="top">
+                    <td colspan="2">Заголовок 1</td>
+                    <td>Заголовок 2</td>
+                </tr>
+                <tr>
+                    <td style="width: 30%;" align="left" valign="top">Ячейка 1</td>
+                    <td style="width: 40%;" align="center" valign="middle">Ячейка 2</td>
+                    <td style="width: 30%;" align="right" valign="top">Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Ячейка 4</td>
+                    <td rowspan="2">
+                        <table style="width: 100%;" class="table_2">
+                            <tr align="center" valign="middle">
+                                <td></td>
+                                <td>Заголовок 1<br>Таблицы 2</td>
+                            </tr>
+                            <tr align="center" valign="middle">
+                                <td>Заголовок 2<br>Таблицы 2</td>
+                                <td>Ячейка 1<br>Таблицы 2</td>
+                            </tr>
+                            <tr align="center" valign="middle">
+                                <td>Заголовок 3<br>Таблицы 2</td>
+                                <td>Ячейка 2<br>Таблицы 2</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="right" valign="middle">Ячейка 6</td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Ячейка 5</td>
+                    <td align="right" valign="bottom">Ячейка 7</td>
+                </tr>
+            </table>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

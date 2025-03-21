@@ -1,0 +1,147 @@
+/*Общий макет*/
+*{
+    margin: 0;
+}
+body{
+    height: 1000px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    background: rgb(255, 137, 137);
+}
+.menu{
+    width: 20%;
+    height: 550px;
+    background: rgb(255, 255, 85);
+    float: left;
+}
+.content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+    width: 60%;
+    background: rgb(183, 183, 255);
+}
+.banner{
+    width: 20%;
+    height: 550px;
+    float: right;
+    background: rgb(116, 255, 116);
+}
+.footer{
+    height: 100px;
+    background: gray;
+    clear: both;
+}
+.wrap{
+    background: rgb(248, 203, 241);
+}
+.clear{
+    clear: both;
+    background: pink;
+}
+
+/*Задание 1*/
+
+.first_title{
+    display: flex;
+    gap: 7px;
+}
+
+.first_title_1{
+    display: flex;
+    align-items: baseline;
+    color: red;
+}
+
+.first_title_2{
+    display: flex;
+    align-items: baseline;
+    color: green;
+}
+
+.second_phrase{
+    display: flex;
+    align-items: center;
+}
+
+.third_phrase{
+    font-size: 4px;
+    text-align: center;
+}
+
+.span_1{
+    color: red;
+}
+
+.span_2{
+    color: rgb(8, 0, 255);
+}
+
+.fourth_phrase{
+    font-family: Courier;
+    color: blue;
+}
+
+.fifth_phrase{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.sixth_phrase{
+    float: right;
+}
+
+.wrap_seven{
+    display: flex;
+}
+
+.seventh_phrase{
+    color: green;
+}
+
+.eighth_phrase{
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+/*Задание 4 и 5*/
+
+.context_wrap{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: 1px solid black;
+}
+
+tr{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+    height: 40px;
+}
+
+.table_2{
+    border: 4px solid black;
+}
+
+.table_3{
+    width: 800px;
+}
+
+.table_3 tr{
+    height: 70px;
+}
+
+dl{
+    margin: 0px;
+    margin-left: 22px;
+}

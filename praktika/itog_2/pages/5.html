@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            Формы
+            <br>
+            <a href="../index.html">Главная</a> |
+            <a href="./1.html">Задание 1</a> |
+            <a href="./2.html">Задание 2</a> |
+            <a href="./3.html">Задание 3</a> |
+            <a href="./4.html">Задание 4</a> |
+            <a href="#">Задание 5</a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="menu">menu</div>
+        <div class="banner">banner</div>
+        <div class="content context_wrap">
+            <form>
+                <table class="table_3">
+                    <tr align="center" valign="middle">
+                        <td rowspan="6" style="width: 25%;">
+                            <div style="display: flex; flex-direction: column; align-items: center">
+                                <button type='submit' style="width: 90px;">
+                                    <b>Кнопка с рисунком</b><br>
+                                    <img src="../image/email.jpg">
+                                </button><br>
+                                <input type="submit" value="send" style="width: 90px;"><br>
+                                <input type="reset" value="reset" style="width: 90px;">
+                            </div>
+                        </td>
+                        <td style="width: 25%;">Вопрос 1</td>
+                        <td style="width: 25%;">Вопрос 2</td>
+                        <td style="width: 25%;">Вопрос 3</td>
+                    </tr>
+                    <tr align="center" valign="middle">
+                        <td>
+                            <input type="text" id="question1" name="question1">
+                        </td>
+                        <td>
+                            <input type="text" id="question2" name="question2">
+                        </td>
+                        <td>
+                            <input type="text" id="question3" name="question3">
+                        </td>
+                    </tr>
+                    <tr align="center" valign="middle">
+                        <td>Вопрос 4</td>
+                        <td>Вопрос 5</td>
+                        <td>Вопрос 6</td>
+                    </tr>
+                    <tr align="center" valign="middle">
+                        <td>
+                            <select name="list" id="list" style="width: 90%;">
+                                <option value="0" selected>Ответ 4.1</option>
+                                <option value="1">Ответ 4.2</option>
+                                <option value="2">Ответ 4.3</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="answer[]">Ответ 5.1
+                            </label>
+                            <label>
+                                <input type="checkbox" name="answer[]">Ответ 5.2
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="radio" name="radio_group" value="value_01" id="Check1">Ответ 5.1
+                            </label>
+                            <label>
+                                <input type="radio" name="radio_group" value="value_01" id="Check1">Ответ 5.2
+                            </label>
+                        </td>
+                    </tr>
+                    <tr align="center" valign="middle">
+                        <td colspan="2">Вопрос 7</td>
+                        <td>Вопрос 8</td>
+                    </tr>
+                    <tr align="center" valign="middle">
+                        <td colspan="2" align="left" valign="middle" style="padding-left: 1.5%;">
+                            <input type="text" id="string" name="query_1" maxlength="10"><br>
+                            <button type="submit" style="width: 110px;">Обзор</button>
+                        </td>
+                        <td>
+                            <textarea name="text_area" lang="ru" style="width: 85%; height: 70%; text-align: center;">Ответ 8.1
+Ответ 8.2
+Ответ 8.3</textarea>
+                        </td>
+                    </tr>
+                    <tr align="center" valign="middle">
+                        <td>Дополнительная<br>информация</td>
+                        <td colspan="3">
+                            <select name="list[]" size="3" multiple id="list" style="width: 97%; height: 90%;">
+                                <option value="0"></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
