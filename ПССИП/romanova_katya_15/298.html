@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>298-301 Модальные окна</title>
+    <script language='javaScript' type='text/javascript'>
+        function test1(){
+            if(confirm("Если вы хоите закрыть окно, нажмите 'ОК'?"))
+            window.close();
+        }
+        function test2(){
+            let N = prompt('Введите Ваше имя, пожалуйста','');
+            window.status="Здравствуйте, " + N + "!";
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <input type=button value="alert" onclick="alert('Сообщение для Вас');">
+        <input type=button value="confirm" onclick="test1();">
+        <input type=button value="prompt" onclick="test2();">
+    </center>
+</body>
+</html>

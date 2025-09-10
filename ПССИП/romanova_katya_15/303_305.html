@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>303-305 Свойства и методы Window</title>
+    <script language='javaScript' type='text/javascript'>
+        function Win(){
+            let wind = prompt('Введение адрес документа для открытия', '298.html');
+            let myWin = open(wind, "", "resizable=no, location=yes");
+            if(confirm('Желаете переместить фокус на новое окно?')) myWin.focus;
+            else myWin.blur;
+        }
+        function Res(){
+            let x = prompt('Введите размер в пикселях для измнения ширины окна \n (знак минус уменьшит окно)', '200');
+            let y = prompt('Введите размер в пикселях для измнения высоты окна \n (знак минус уменьшит окно)', '-100');
+            window.resizeBy(x,y);
+        }
+    </script>
+</head>
+<body>
+    Если желайте открыть другой документ в новом окне, нажмите на кнопку "Открыть"
+    <input type='button' value="Открыть" onclick="Win();"><br><br>
+    Если желайте изменить размер текущего окна, нажмите на кнопку "Изменить"
+    <input type="button" value="Изменить" onclick="Res();">
+</body>
+</html>

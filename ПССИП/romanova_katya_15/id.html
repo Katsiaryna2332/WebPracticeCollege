@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инидивидуальное задание лаб15</title>
+    <script type='text/javascript'>
+        function writeWinName(){
+            let N = prompt('Введите новое имя окна window', '');
+            window.name=N;
+        }
+        function showWindowName() {
+            alert('Имя текущего окна: "' + window.name + '"');
+        }
+        function printWindow() {
+            print();
+        }
+        function showDefaultStatus() {
+            window.defaultStatus = "Это окно";
+            alert('Текущий статус окна (window.defaultStatus): "' + window.defaultStatus + '"');
+        }
+    </script>
+</head>
+<body>
+    <p>Нажмите кнопку, чтобы задать имя текущего окна (window.name):</p>
+    <input type=button value="Задать имя окну" onclick="writeWinName();">
+    <p>Нажмите кнопку, чтобы узнать имя текущего окна (window.name):</p>
+    <input type="button" value="Показать имя окна" onclick="showWindowName();"><br><br>
+    <input type="button" value="Просмотреть версию для печати" onclick="printWindow();">
+    <p>Если хотите узнать статус окна, нажмите кнопку "Показать статус"</p>
+    <input type="button" value="Показать статус" onclick="showDefaultStatus();" />
+</body>
+</html>
