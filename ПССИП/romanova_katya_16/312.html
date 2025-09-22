@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамичесое создание документа</title>
+    <script type="text/javascript">
+        function CreateWindow(){
+            let myWin=open('','','width=400, height=100, toolbar=no,menubar=no');
+            myWin.document.open();
+            myWin.document.write('<html><body><font size=+3>');
+            myWin.document.write('Hello');
+            myWin.document.write('</font></body></html>');
+            myWin.document.close();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="отркыть окно и создать в нём документ" onclick="CreateWindow();"><br><br>
+    Последнее измненение документа было:
+    <script language='javascript' type="text/javascript">
+        document.write(document.fileModifiedDate);
+        document.close();
+    </script>
+</body>
+</html>

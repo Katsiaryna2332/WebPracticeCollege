@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 задание</title>
+</head>
+<body>
+    <form>
+        Первое число: <input type="text"><br>
+        Второе число: <input type="text"><br>
+        <input type="button" value="Вычислить сумму" onclick="document.forms[0].elements[3].value=parseInt(document.forms[0].elements[0].value)+parseInt(document.forms[0].elements[1].value);"><br><br>
+        Сумма: <input type="text"><br>
+    </form>
+    <hr>
+    <form name="sum">
+        Первое число: <input type="text" name="number1"><br>
+        Второе число: <input type="text" name="number2"><br>
+        <input type="button" value="Вычислить сумму" onclick="document.sum.result.value=parseInt(document.sum.number1.value)+parseInt(document.sum.number2.value);"><br><br>
+        Сумма: <input type="text" name="result"><br>
+    </form>
+</body>
+</html>
