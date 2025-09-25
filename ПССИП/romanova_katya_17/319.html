@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Универсальные 319-320</title>
+    <script type="text/javascript">
+        function f1(){
+            let allDiv = document.getElementsByTagName('DIV');
+            for(let i=0;i<allDiv.length;i++){
+                allDiv[i].removeAttribute('style', false);
+            }
+            document.all[4].innerText = "Общие свойсвтва и методы";
+            document.getElementsByTagName('input')[0].setAttribute('value', 'Уже изменили',false);
+        }
+        function innerF(){
+            let newP = "<b>Новый тест после изменений</b>";
+            document.getElementById('updateTextP').innerHTML = newP;
+        }
+        function elementStely7(){
+            let elemetN7 = document.getElementById('element7');
+            elemetN7.style.position = 'absolute';
+            elemetN7.style.left = '200px';
+            elemetN7.style.top = '450px';
+            elemetN7.style.width = '300px';
+            elemetN7.style.height = '50px';
+            elemetN7.style.fontSize = '20px';
+        }
+    </script>
+
+    <style>
+        #element7 {
+          position: absolute;
+          left: 0px;
+          top: 350px;
+          width: 150px;
+          height: 80px;
+          font-size: 10px;
+          background-color: lightblue;
+          line-height: 80px;
+          text-align: center;
+          border: 1px solid #000;
+        }
+      </style>
+</head>
+<body>
+    <div style="color: aqua;">Универсальные</div>
+    <div style="color: lime;">Свойства и методы </div>
+    <div style="color: magenta;"> поддерживаются всеми элементами </div>
+    <input type="button" onclick="f1();" value="Изменить" style="float: right;">
+    <hr>
+
+    <p>Изменить текст:</p>
+    <pre id="updateTextP">старый текст</pre>
+    <input type="button" onclick="innerF();" value="Изменить">
+    <hr>
+
+    <div style="background:red;width:100px;height:100px;" id='b' onmouseover="this.style.backgroundColor='blue'" onmouseout="this.style.backgroundColor='red'"></div>
+    <hr>
+
+    <div id="element7">
+        Элемент из задания 7
+    </div>
+    <input type="button" onclick="elementStely7();" value="Изменить">
+</body>
+</html>
