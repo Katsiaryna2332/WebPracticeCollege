@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индивидуальное задание</title>
+    <script type="text/javascript">
+        function f1(){
+            document.getElementsByTagName('input')[0].setAttribute('value', 'Уже изменили');
+            let elem = document.querySelector('.element1');
+            if (elem) {
+                elem.className = 'element2';
+            }
+        }
+        function insertHTML() {
+            const targetElem = document.getElementById('insertTarget');
+            targetElem.insertAdjacentHTML('afterend', '<div class="highlight" style="color: red;">Добавленный элемент с insertAdjacentHTML</div>');
+        }
+    </script>
+
+    <style>
+        .element1 {
+            font-size: 15px;
+            color: blue;
+        }
+        .element2 {
+            font-size: 20px;
+            color: red;
+        }
+      </style>
+</head>
+<body>
+    <p>Изменение класса текста:</p>
+    <p class="element1">Текст</p>
+    <input type="button" onclick="f1();" value="Изменить">
+
+    <div id="insertTarget" style="margin-top:20px;">Сюда добавляем HTML</div>
+    <input type="button" onclick="insertHTML();" value="Добавить">
+</body>
+</html>
