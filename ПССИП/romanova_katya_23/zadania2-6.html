@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания 2-6 лабораторная 23 Романова</title>
+    <script>
+        //350. Задание 2.
+        // строка JSON
+        let jsonStudent = '{"name":"Саша","age":25,"isAdmin":false, "courses": ["html", "css","js"],"curator":{"surname":"Иванова","name":"Ольга Петровна"}, "excellent student":null}';
+        // объект JavaScript 
+        let student = { 
+            name: 'Саша', 
+            age: 25, 
+            isAdmin: false, 
+            courses: ['html', 'css', 'js'], 
+            curator: { 
+                surname: "Иванова", 
+                name: "Ольга Петровна"
+            },
+            "excellent student": null
+        };
+        let strJson = JSON.stringify(student);
+        let objStudent = JSON.parse(jsonStudent);
+        alert(objStudent.name); // Саша 
+        alert(objStudent.courses [2]); // js 
+        alert(objStudent.curator.surname); // Иванова
+
+        //351. Задание 3.
+        let str = '{"title":"Conference", "date":"2022-03-08T12:00:00.000Z"}';
+        let obj = JSON.parse(str, function(key, value){ 
+            if (key == 'date') return new Date(value);
+            return value;
+        });
+        alert(obj.date.toDateString()); // Tue Mar 08 2022
+
+        //Задание 4. Отладка примера JSON.stringify.
+        let student4 = {
+            name: 'John',
+            age: 30,
+            isAdmin: false,
+            courses: ['html', 'css', 'js'],
+            wife: null
+        };
+        let json = JSON.stringify(student4);
+        alert(typeof json); // мы получили строку!
+        alert(json);
+        /* выведет объект в формате JSON:
+        {
+            "name": "John",
+            "age": 30,
+            "isAdmin": false,
+            "courses": ["html", "css", "js"],
+            "wife": null
+        }*/
+
+        // число в JSON остаётся числом
+        alert( JSON.stringify(1) ) // 1
+        // строка в JSON по-прежнему остаётся строкой, но в двойных кавычках
+        alert( JSON.stringify('test') ) // "test"
+        alert( JSON.stringify(true) ); // true
+        alert( JSON.stringify([1, 2, 3]) ); // [1,2,3]
+
+        //Задание 5. Отладка примера JSON.parse.
+        // строковый массив
+        let numbers = "[0, 1, 2, 3]";
+        numbers = JSON.parse(numbers);
+        alert( numbers[1] ); // 1
+
+        let user = '{ "name": "John", "age": 35, "isAdmin": false, "friends":[0,1,2,3] }';
+        user = JSON.parse(user);
+        alert( user.friends[1] ); // 1
+
+        //Задание 6. Отладка примера преобразования User в JSON и обратно.
+        let user6 = {
+            name: "Василий Иванович",
+            age: 35
+        };
+        let userJson = JSON.stringify(user6);
+        alert(userJson);
+        let objUser = JSON.parse(userJson);
+        alert(objUser.name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
